@@ -8,8 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Setter
 @Getter
 @EqualsAndHashCode
@@ -21,4 +19,6 @@ public class Categoria implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
+    public Categoria() {
+    }
 }
